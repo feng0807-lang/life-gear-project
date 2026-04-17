@@ -1,0 +1,39 @@
+body {
+    background-color: #050505;
+    color: #00ff41;
+    overflow: hidden;
+    user-select: none;
+}
+
+/* 针对移动端的触摸优化 */
+#gear-container {
+    cursor: grab;
+    -webkit-tap-highlight-color: transparent;
+}
+
+#gear-container:active {
+    cursor: grabbing;
+}
+
+/* 霓虹发光效果 */
+#counter {
+    text-shadow: 0 0 15px rgba(0, 255, 65, 0.4);
+}
+
+select {
+    cursor: pointer;
+}
+
+/* 排行榜滚动条美化 */
+#state-list {
+    max-height: 120px;
+    overflow-y: auto;
+}
+
+#state-list::-webkit-scrollbar {
+    width: 2px;
+}
+
+#state-list::-webkit-scrollbar-thumb {
+    background: #00ff41;
+}
